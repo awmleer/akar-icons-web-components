@@ -1,4 +1,4 @@
-import { Component, h, Prop, Element, State, Watch } from '@stencil/core';
+import { Component, h, Prop, State, Watch } from '@stencil/core';
 import { fetchIcon } from '../../utils/fetch-icon';
 
 @Component({
@@ -8,7 +8,6 @@ import { fetchIcon } from '../../utils/fetch-icon';
 })
 export class AkarIcon {
   @Prop() name: string;
-  @Element() $el: HTMLElement;
   @Prop() stroke: number = 1;
   @Prop() size: number = 24;
   @Prop() color: string = "inherit";
