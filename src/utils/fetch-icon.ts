@@ -13,7 +13,6 @@ export async function fetchIcon(name: string) {
     credentials: 'omit',
   });
   const data = await res.text();
-  console.log(data);
   cache[name] = data.replace(/stroke="((?!none)[^"]+)"/g, 'stroke="currentColor"').replace(/fill="((?!none)[^"]+)"/g, 'fill="currentColor"');
   return cache[name];
 }
