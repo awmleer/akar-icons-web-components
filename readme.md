@@ -11,13 +11,13 @@ Also a handy icon framework for dynamically customizable icons.
 
 ## Features
 
-- Framework **INDEPENDENT**, [AkarIcons Web Components](https://github.com/awmleer/akar-icons-web-components) can be **DIRECTLY** used in **ANY** frameworks: [React](https://reactjs.org/), [Vue.js](https://vuejs.org/), you name it
-- With **lazy loading** icons, the main script weighs **~4KB**, loading each uncached icon costs **~0.5KB** increacement
-- Fully customizable, dynamically color changing is ancient, how about changing **`stroke-width`** and **`line-style`** **ON THE FLY**?
+- Framework **INDEPENDENT**, [AkarIcons Web Components](https://github.com/awmleer/akar-icons-web-components) can be **DIRECTLY** used in **ANY** frameworks: [React](https://reactjs.org/), [Vue.js](https://vuejs.org/), you name it 🤗
+- With **lazy loading** icons, the main script weighs **~4KB**, loading each uncached icon costs **~0.5KB** increacement 🤩
+- Fully customizable, dynamically color changing is ancient, how about changing **`stroke-width`** and **`line-style`** **ON THE FLY**? 🤯
 
-Read more about the design philosophies in [this article](https://todo.dev)!
+Read more about the design philosophies in [this article](https://dev.to/johntheo/lazy-loading-svg-icons-using-web-components-3foi)! 📄
 
-## Get Started
+## Getting Started
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/akar-icons-web-components" type="module"></script>
@@ -80,17 +80,19 @@ Or set a universal style for all `<akar-icon>`s:
 </style>
 ```
 
-Yes, you can do that! 😇
+And yes, it's that simple! 😇
 
-## Features (May be) Coming
+## Features (may be) Coming
 
 - Visual alignment adjustment configs
 - Framework(React, etc)-friendly wrappers
 - Dichromatic Icons
 - SVG ANIMATIONS 🤟
+- Use <use> tag to reduce elements inserted into page
+- Use localstorage to mimic cache
 
 
-## Change log
+## Change Log
 
 - **`0.1/0.2`** Sep 19, 2021. First commit!
 
