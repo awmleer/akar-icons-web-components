@@ -1,0 +1,15 @@
+:host .svg {
+  width: var(--size);
+  height: var(--size);
+}
+
+:host .svg svg {
+  width: 100%;
+  height: 100%;
+}
+
+:host svg * {
+  stroke-width: var(--stroke);
+  stroke-linecap: var(--cap);
+  stroke-linejoin: var(--join);
+}

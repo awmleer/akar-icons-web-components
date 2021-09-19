@@ -6,56 +6,44 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first": string;
-        /**
-          * The last name
-         */
-        "last": string;
-        /**
-          * The middle name
-         */
-        "middle": string;
+    interface AkarIcon {
+        "cap": string;
+        "color": string;
+        "join": string;
+        "name": string;
+        "size": number;
+        "stroke": number;
     }
 }
 declare global {
-    interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
+    interface HTMLAkarIconElement extends Components.AkarIcon, HTMLStencilElement {
     }
-    var HTMLMyComponentElement: {
-        prototype: HTMLMyComponentElement;
-        new (): HTMLMyComponentElement;
+    var HTMLAkarIconElement: {
+        prototype: HTMLAkarIconElement;
+        new (): HTMLAkarIconElement;
     };
     interface HTMLElementTagNameMap {
-        "my-component": HTMLMyComponentElement;
+        "akar-icon": HTMLAkarIconElement;
     }
 }
 declare namespace LocalJSX {
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first"?: string;
-        /**
-          * The last name
-         */
-        "last"?: string;
-        /**
-          * The middle name
-         */
-        "middle"?: string;
+    interface AkarIcon {
+        "cap"?: string;
+        "color"?: string;
+        "join"?: string;
+        "name"?: string;
+        "size"?: number;
+        "stroke"?: number;
     }
     interface IntrinsicElements {
-        "my-component": MyComponent;
+        "akar-icon": AkarIcon;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "akar-icon": LocalJSX.AkarIcon & JSXBase.HTMLAttributes<HTMLAkarIconElement>;
         }
     }
 }
