@@ -10,6 +10,7 @@
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
   "unpkg": "dist/akar-icons-web-components/akar-icons-web-components.esm.js",
+  "jsdelivr": "dist/akar-icons-web-components/akar-icons-web-components.esm.js",
   "files": [
     "dist/",
     "loader/"

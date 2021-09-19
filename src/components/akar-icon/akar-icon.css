@@ -8,6 +8,7 @@
   height: 100%;
 }
 
+:host svg,
 :host svg * {
   stroke-width: var(--stroke);
   stroke-linecap: var(--cap);

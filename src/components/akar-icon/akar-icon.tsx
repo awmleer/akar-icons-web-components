@@ -8,7 +8,7 @@ import { fetchIcon } from '../../utils/fetch-icon';
 })
 export class AkarIcon {
   @Prop() name: string;
-  @Prop() stroke: number = 1;
+  @Prop() stroke: number = 1.5;
   @Prop() size: number = 24;
   @Prop() color: string = "inherit";
   @Prop() cap: string = "round";
