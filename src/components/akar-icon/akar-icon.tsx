@@ -22,8 +22,7 @@ export class AkarIcon {
       mode: 'cors',
       credentials: 'omit',
     })
-    const data = await res.text()
-    console.log(data)
+    const data = await res.text();
     this.svg = data.replace(/stroke="((?!none)[^"]+)"/g, 'stroke="currentColor"')
     .replace(/fill="((?!none)[^"]+)"/g, 'fill="currentColor"')
   }

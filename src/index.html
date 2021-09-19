@@ -34,12 +34,16 @@
     const icon = document.getElementById('icon');
     const gui = new dat.GUI();
     const iconConfigs = {
+      name: 'bicycle',
       stroke: 2,
       color: '#0000ff',
       size: 160,
       cap: 'round',
       join: 'round',
     }
+    gui.add(iconConfigs, "name").onFinishChange((x) => {
+      icon.setAttribute('name', x)
+    });
     gui.add(iconConfigs, 'stroke', 0.5, 3, 0.1)
       .onChange((x)=>(icon.setAttribute('stroke', x)));
     gui.addColor(iconConfigs, 'color')
