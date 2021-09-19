@@ -1,4 +1,5 @@
 import { Component, h, Prop, Element, State, Watch } from '@stencil/core';
+import { fetchIcon } from '../../utils/fetch-icon';
 
 @Component({
   tag: 'akar-icon',
@@ -16,20 +17,12 @@ export class AkarIcon {
   @State() svg: string = ''
 
   async fetchSvg(name: string) {
-    if (!name) return
-    const res = await fetch(`https://raw.githubusercontent.com/artcoholic/akar-icons/master/src/svg/${name}.svg`, {
-      method: 'GET',
-      mode: 'cors',
-      credentials: 'omit',
-    })
-    const data = await res.text();
-    this.svg = data.replace(/stroke="((?!none)[^"]+)"/g, 'stroke="currentColor"')
-    .replace(/fill="((?!none)[^"]+)"/g, 'fill="currentColor"')
+    this.svg = await fetchIcon(name)
   }
 
   @Watch('name')
-  handleNameChange(newValue: string) {
-    this.fetchSvg(newValue)
+  async handleNameChange(newValue: string) {
+    this.svg = await fetchIcon(newValue)
   }
 
   async componentWillLoad() {
