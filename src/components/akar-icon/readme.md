@@ -14,7 +14,7 @@
 | `join`   | `join`    |             | `string` | `"round"`   |
 | `name`   | `name`    |             | `string` | `undefined` |
 | `size`   | `size`    |             | `number` | `24`        |
-| `stroke` | `stroke`  |             | `number` | `1`         |
+| `stroke` | `stroke`  |             | `number` | `1.5`       |
 
 
 ----------------------------------------------

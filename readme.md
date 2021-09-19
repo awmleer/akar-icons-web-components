@@ -7,13 +7,15 @@
 
 Also a handy icon framework for dynamically customizable icons.
 
+![](https://raw.githubusercontent.com/awmleer/akar-icons-web-components/master/assets/img/banner.gif)
+
 ## Features
 
 - Framework **INDEPENDENT**, [AkarIcons Web Components](https://github.com/awmleer/akar-icons-web-components) can be **DIRECTLY** used in **ANY** frameworks: [React](https://reactjs.org/), [Vue.js](https://vuejs.org/), you name it
 - With **lazy loading** icons, the main script weighs **~4KB**, loading each uncached icon costs **~0.5KB** increacement
-- Fully customizable, dynamically changing color is ancient, what about changing **`stroke-width`** and **`line-style`** **ON THE FLY**?
+- Fully customizable, dynamically color changing is ancient, how about changing **`stroke-width`** and **`line-style`** **ON THE FLY**?
 
-See more about the design philosophies in [this article](https://todo.dev)!
+Read more about the design philosophies in [this article](https://todo.dev)!
 
 ## Get Started
 
@@ -27,18 +29,15 @@ See more about the design philosophies in [this article](https://todo.dev)!
 
 And voilà, the icon is ready.
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="LYLddpd" data-editable="true" data-user="john-theo" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/john-theo/pen/LYLddpd">
-  akar-icons-web-components-demo</a> by John Theo (<a href="https://codepen.io/john-theo">@john-theo</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+[![](https://raw.githubusercontent.com/awmleer/akar-icons-web-components/master/assets/img/codepen.png)](https://codepen.io/john-theo/pen/LYLddpd)
+
+Play around with [the CodePen](https://codepen.io/john-theo/pen/LYLddpd).
 
 ## Advanced Usage
 
 ### Appetizer
 
-Note on the top right corner of the CodePen above, there is a dropdown menu. Open and have fun with it.
+Note on the top right corner of the CodePen, there is a dropdown menu. Open and have fun with it.
 
 > Value for the `name` field can be copied from [AkarIcons homepage](https://akaricons.com/) without the `ai-` prefix, eg. `arrow-left`
 
@@ -104,11 +103,8 @@ yarn run start
 
 ## Authors
 
-<div class="github-card" data-github="awmleer" data-width="400" data-height="" data-theme="default"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
-
-<div class="github-card" data-github="John-Theo" data-width="400" data-height="" data-theme="default"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+- 卡晨 [@awmleer](https://github.com/awmleer)
+- John [@John-Theo](https://github.com/John-Theo)
 
 ## License
 MIT License, Copyright © 2021-present @awmleer and @John-Theo.
