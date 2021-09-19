@@ -1,6 +1,4 @@
-import { Component, h, Prop, Element } from '@stencil/core';
-import AirIcon from '../../../assets/akar-icons/src/svg/air.svg'
-
+import { Component, h, Prop, Element, State, Watch } from '@stencil/core';
 
 @Component({
   tag: 'akar-icon',
@@ -15,25 +13,39 @@ export class AkarIcon {
   @Prop() color: string = "inherit";
   @Prop() cap: string = "round";
   @Prop() join: string = "round";
+  @State() svg: string = ''
 
-  get svg() {
-    return AirIcon
-      .replace(/stroke="((?!none)[^"]+)"/g, 'stroke="currentColor"')
-      .replace(/fill="((?!none)[^"]+)"/g, 'fill="currentColor"');
+  async fetchSvg(name: string) {
+    if (!name) return
+    const res = await fetch(`https://raw.githubusercontent.com/artcoholic/akar-icons/master/src/svg/${name}.svg`, {
+      method: 'GET',
+      mode: 'cors',
+      credentials: 'omit',
+    })
+    const data = await res.text()
+    console.log(data)
+    this.svg = data.replace(/stroke="((?!none)[^"]+)"/g, 'stroke="currentColor"')
+    .replace(/fill="((?!none)[^"]+)"/g, 'fill="currentColor"')
   }
 
-  private _setStyle(property: string, value: string, priority?: string) {
-    return this.$el.style.setProperty(property, value, priority);
+  @Watch('name')
+  handleNameChange(newValue: string) {
+    this.fetchSvg(newValue)
+  }
+
+  async componentWillLoad() {
+    await this.fetchSvg(this.name)
   }
 
   render() {
-    this._setStyle('--stroke', this.stroke.toString());
-    this._setStyle('color', this.color);
-    this._setStyle('--size', this.size+'px');
-    this._setStyle('--cap', this.cap);
-    this._setStyle('--join', this.join);
     return (
-      <div class='svg' innerHTML={this.svg} />
+      <div class='svg' innerHTML={this.svg} style={{
+        'color': this.color,
+        '--stroke': this.stroke.toString(),
+        '--size': this.size + 'px',
+        '--cap': this.cap,
+        '--join': this.join,
+      }} />
     );
   }
 
