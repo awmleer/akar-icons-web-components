@@ -29,7 +29,7 @@ Read more about the design philosophies in [this article](https://dev.to/johnthe
 
 And voilà, the icon is ready.
 
-[![](https://raw.githubusercontent.com/awmleer/akar-icons-web-components/master/assets/img/codepen.png)](https://codepen.io/john-theo/pen/LYLddpd)
+[![](https://raw.githubusercontent.com/awmleer/akar-icons-web-components/master/assets/img/codepen.png)](https://codepen.io/john-theo/pen/LYLddpd) [![Join the chat at https://gitter.im/akar-icons-web-components/community](https://badges.gitter.im/akar-icons-web-components/community.svg)](https://gitter.im/akar-icons-web-components/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Play around with [the CodePen](https://codepen.io/john-theo/pen/LYLddpd).
 
